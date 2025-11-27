@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientações SENAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/orientacao.css">
+</head>
+
+<body>
+    <header>
+        <nav class="fundoTop border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="img/image (13).png" class="logBord h-8" alt="Logo" />
+                    <span id="corLog"
+                        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Orientações
+                        SENAI</span></a>
+
+
+
+
+
+            </div>
+        </nav>
+
+    </header>
+
+    <button id="openModal" class="SairBot"><a href="#"><span class="NomBot">Nova
+                Orientação</span></a></button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Registrar Atividade</h2>
+
+            <label for="equipe">Equipe:</label>
+            <input type="text" id="equipe" placeholder="Ex: Equipe Alpha">
+            <label for="data">Data:</label>
+            <input type="date" id="data">
+            <label for="hora">Horário:</label>
+            <input type="time" id="hora">
+            <label for="orientador">Orientador:</label>
+            <input type="text" id="orientador" placeholder="Ex: João Silva">
+            <label for="observacoes">Resumo da orientação:</label>
+            <textarea id="observacoes" placeholder="Descreva o resumo da orientação aqui..."></textarea>
+
+            <div class="buttons">
+                <button id="registrarBtn">Registrar</button>
+                <button id="cancelarBtn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="formCamp p-6 text-center">Nenhuma orientação registrada</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+<script src="js/orientacaoS.js"></script>
+
+</html>
